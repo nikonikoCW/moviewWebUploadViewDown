@@ -113,7 +113,7 @@ app.get('/img/:id', function (req, res) {
   })
 })
 
-app.get('/air', function (req, res, next) {
+app.get('/down/:id', function (req, res, next) {
   console.info('已返回视频')
   res.sendFile(path.join(__dirname, 'upload/18571caf18c3564cf61a0b102ad1b25e.mp4'));
 })
